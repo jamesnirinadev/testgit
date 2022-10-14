@@ -1,0 +1,71 @@
+
+EXO 11.1 - Créer une fonction Somme
+<!--Variables -->
+nb1 <- " " 
+nb2 <- " " 
+nb3 <- " " 
+nb4 <- " " 
+nb5 <- " " 
+
+<!--La fonction -->
+        FONCTION FonctSomme(nb1 en entier,nb2 entier,nb3 entier,nb4 entier,nb5 entier) en  entier
+        RESULTAT_SOMME <- " "
+                    Tantque nb1 <> 0 et nb2 <> 0 et nb3 <> 0 et nb4 <> 0 et nb5 <> 0,
+                                RESULTAT_SOMME <- nb1 + nb2 + nb3 + nb4 + nb5
+                    Finque
+        RENVOYER RESULTAT_SOMME
+        FinFONCTION
+
+<!--L'execution -->
+Début        
+        ECRIRE "Veuillez écrire 5 nombres"
+        LIRE    nb1,nb2,nb3,nb4,nb5
+        ECRIRE FonctSOMME(nb1,nb2,nb3,nb4,nb5)
+        ECRIRE "Votre résultat est ", RESULTAT_SOMME
+
+Fin
+
+
+
+
+EXO 11.2 - Créer une fonction pour les voyelles
+<!--Variables -->
+LONG en entier
+POSITION en entier
+PHRASE en caractère
+
+Fonction Trouver(POSITION,PHRASE en caractère) en entier
+i en entier
+    Si LONG(POSITION)>LONG(PHRASE) alors
+        renvoyer 0
+    Sinon
+        Pour i <-- 1 à lONG(PHRASE)-LONG(POSITION)+1
+            Si mid(a,i,LONG(POSITION)) = POSITION alors
+                renvoyer i
+        i suivant
+FinFonction
+
+
+
+EXO 11.3 - Fonction recréer la fonction Trouve
+<!-- Variables -->
+PHRASE <- indéfini en caractère
+i <- 0
+Nb_VOYELLE <- 0
+VOYELLE <- "aeiouy"
+
+
+
+Fonction TrouverlaVoyelle(PHRASE)
+ECRIRE  "Entrez une phrase"
+LIRE    PHRASE
+
+POUR--------i <- 1 à Nb_MOT
+            SI----------len(VOYELLE, MID(PHRASE,i,1) <> 0 ) ALORS
+            Nb_VOYELLE <- Nb_VOYELLE + 1
+            finSi
+i SUIVANT
+
+ECRITURE "Le nombre de Voyelle est", Nb_VOYELLE
+
+
